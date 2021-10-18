@@ -19,7 +19,7 @@ fn main() {
         "Super duper Roby Sieve of Eratosthenes in Rust, taking time for a 60000 set of numbers!"
     );
     let start = PreciseTime::now();
-    sieve(4294967294);
+    sieve(60000);
     let end = PreciseTime::now();
     println!("WOW! it took {} seconds.", start.to(end));
 }
