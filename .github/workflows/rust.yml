@@ -16,11 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Change directory
-      run: cd eratosthenes-sieve
-    - name: Check directory
-      run: pwd
     - name: Build
+      working-directory: /eratosthenes-sieve
       run: cargo build --verbose
     - name: Run
+      working-directory: /eratosthenes-sieve
       run: cargo run --verbose
